@@ -12,50 +12,50 @@ import {
   IoPersonOutline,
   IoCalendarClearOutline
 } from 'react-icons/io5';
-import './assets/css/style.css';
+import '../assets/css/landing.css';
 
 // Import des images
-import logo from './assets/images/logo.svg';
-import heroSlider1 from './assets/images/hero-slider-1.jpg';
-import heroSlider2 from './assets/images/hero-slider-2.jpg';
-import heroSlider3 from './assets/images/hero-slider-3.jpg';
-import heroIcon from './assets/images/hero-icon.png';
-import service1 from './assets/images/service-1.jpg';
-import service2 from './assets/images/service-2.jpg';
-import service3 from './assets/images/service-3.jpg';
-import shape1 from './assets/images/shape-1.png';
-import shape2 from './assets/images/shape-2.png';
-import shape3 from './assets/images/shape-3.png';
-import aboutBanner from './assets/images/about-banner.jpg';
-import aboutAbsImage from './assets/images/about-abs-image.jpg';
-import badge2 from './assets/images/badge-2.png';
-import specialDishBanner from './assets/images/special-dish-banner.jpg';
-import badge1 from './assets/images/badge-1.png';
-import shape4 from './assets/images/shape-4.png';
-import shape9 from './assets/images/shape-9.png';
-import menu1 from './assets/images/menu-1.png';
-import menu2 from './assets/images/menu-2.png';
-import menu3 from './assets/images/menu-3.png';
-import menu4 from './assets/images/menu-4.png';
-import menu5 from './assets/images/menu-5.png';
-import menu6 from './assets/images/menu-6.png';
-import shape5 from './assets/images/shape-5.png';
-import shape6 from './assets/images/shape-6.png';
-import testiBg from './assets/images/testimonial-bg.jpg';
-import testiAvatar from './assets/images/testi-avatar.jpg';
-import formPattern from './assets/images/form-pattern.png';
-import featuresIcon1 from './assets/images/features-icon-1.png';
-import featuresIcon2 from './assets/images/features-icon-2.png';
-import featuresIcon3 from './assets/images/features-icon-3.png';
-import featuresIcon4 from './assets/images/features-icon-4.png';
-import shape7 from './assets/images/shape-7.png';
-import shape8 from './assets/images/shape-8.png';
-import event1 from './assets/images/event-1.jpg';
-import event2 from './assets/images/event-2.jpg';
-import event3 from './assets/images/event-3.jpg';
-import footerBg from './assets/images/footer-bg.jpg';
+import logo from '../assets/images/logo.svg';
+import heroSlider1 from '../assets/images/hero-slider-1.jpg';
+import heroSlider2 from '../assets/images/hero-slider-2.jpg';
+import heroSlider3 from '../assets/images/hero-slider-3.jpg';
+import heroIcon from '../assets/images/hero-icon.png';
+import service1 from '../assets/images/service-1.jpg';
+import service2 from '../assets/images/service-2.jpg';
+import service3 from '../assets/images/service-3.jpg';
+import shape1 from '../assets/images/shape-1.png';
+import shape2 from '../assets/images/shape-2.png';
+import shape3 from '../assets/images/shape-3.png';
+import aboutBanner from '../assets/images/about-banner.jpg';
+import aboutAbsImage from '../assets/images/about-abs-image.jpg';
+import badge2 from '../assets/images/badge-2.png';
+import specialDishBanner from '../assets/images/special-dish-banner.jpg';
+import badge1 from '../assets/images/badge-1.png';
+import shape4 from '../assets/images/shape-4.png';
+import shape9 from '../assets/images/shape-9.png';
+import menu1 from '../assets/images/menu-1.png';
+import menu2 from '../assets/images/menu-2.png';
+import menu3 from '../assets/images/menu-3.png';
+import menu4 from '../assets/images/menu-4.png';
+import menu5 from '../assets/images/menu-5.png';
+import menu6 from '../assets/images/menu-6.png';
+import shape5 from '../assets/images/shape-5.png';
+import shape6 from '../assets/images/shape-6.png';
+import testiBg from '../assets/images/testimonial-bg.jpg';
+import testiAvatar from '../assets/images/testi-avatar.jpg';
+import formPattern from '../assets/images/form-pattern.png';
+import featuresIcon1 from '../assets/images/features-icon-1.png';
+import featuresIcon2 from '../assets/images/features-icon-2.png';
+import featuresIcon3 from '../assets/images/features-icon-3.png';
+import featuresIcon4 from '../assets/images/features-icon-4.png';
+import shape7 from '../assets/images/shape-7.png';
+import shape8 from '../assets/images/shape-8.png';
+import event1 from '../assets/images/event-1.jpg';
+import event2 from '../assets/images/event-2.jpg';
+import event3 from '../assets/images/event-3.jpg';
+import footerBg from '../assets/images/footer-bg.jpg';
 
-const RestaurantTemplate = () => {
+const Landing = () => {
   // États
   const [isLoaded, setIsLoaded] = useState(false);
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -309,15 +309,17 @@ const RestaurantTemplate = () => {
 
   if (!isLoaded) {
     return (
-      <div className="preload" data-preaload>
-        <div className="circle"></div>
-        <p className="text">Grilli</p>
+      <div className="landing-page">
+        <div className="preload" data-preaload>
+          <div className="circle"></div>
+          <p className="text">Grilli</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <>
+    <div className="landing-page">
       {/* Top Bar */}
       <div className="topbar">
         <div className="container">
@@ -935,8 +937,8 @@ const RestaurantTemplate = () => {
       >
         <IoChevronUp />
       </a>
-    </>
+    </div>
   );
 };
 
-export default RestaurantTemplate;
+export default Landing;
