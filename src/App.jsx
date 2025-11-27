@@ -7,7 +7,7 @@ import PublicLayout from './layouts/PublicLayout';
 import AdminLayout from './layouts/AdminLayout';
 
 // Public Pages
-import Landing from './pages/Landing';
+import HomePage from './pages/HomePage';
 import PublicMenuPage from './pages/PublicMenuPage';
 import ReservationPage from './pages/ReservationPage';
 import LoginPage from './pages/LoginPage';
@@ -55,7 +55,7 @@ const AppRoutes = () => {
       {/* Public Routes with Layout */}
       {/* <Route element={<PublicLayout />}> */}
       <Route >
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<PublicMenuPage />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Route>
