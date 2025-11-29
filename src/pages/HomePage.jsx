@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { UtensilsCrossed, Clock, MapPin, Phone, Star, ChefHat, Users } from 'lucide-react';
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
           <div className="bg-red-600/20 backdrop-blur-sm rounded-full p-4 w-24 h-24 mx-auto mb-8 flex items-center justify-center">
             <UtensilsCrossed className="h-12 w-12 text-red-400" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Le Gourmet</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">RestoFlow</h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-4">Restaurant Gastronomique</p>
           <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
             Decouvrez une experience culinaire unique avec des plats prepares par nos chefs passionnes, 
@@ -139,9 +139,9 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <UtensilsCrossed className="h-6 w-6 text-red-500" />
-            <span className="text-white font-bold text-lg">Le Gourmet</span>
+            <span className="text-white font-bold text-lg">RestoFlow</span>
           </div>
-          <p className="text-sm">2025 Le Gourmet. Tous droits reserves.</p>
+          <p className="text-sm">2025 RestoFlow. Tous droits reserves.</p>
         </div>
       </footer>
     </div>

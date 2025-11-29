@@ -1,4 +1,4 @@
-﻿import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { LayoutDashboard, Table, CalendarDays, Clock, UtensilsCrossed, ClipboardList, LogOut } from 'lucide-react';
 
@@ -24,7 +24,7 @@ const AdminLayout = () => {
     <div className="min-h-screen bg-gray-100">
       <aside className="fixed inset-y-0 left-0 w-64 bg-gray-900 text-white">
         <div className="p-4 border-b border-gray-800">
-          <h1 className="text-xl font-bold">Admin Panel</h1>
+          <h1 className="text-xl font-bold">RestoFlow Admin</h1>
         </div>
         <nav className="p-4 space-y-2">
           {links.map(link => (
@@ -49,7 +49,7 @@ const AdminLayout = () => {
             className="flex items-center gap-3 w-full px-3 py-2 text-gray-300 hover:bg-gray-800 rounded transition-colors"
           >
             <LogOut className="h-5 w-5" />
-            Déconnexion
+            D�connexion
           </button>
         </div>
       </aside>

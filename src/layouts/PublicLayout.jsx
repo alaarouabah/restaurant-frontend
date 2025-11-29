@@ -1,4 +1,4 @@
-﻿import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 import { UtensilsCrossed, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -13,7 +13,7 @@ const PublicLayout = () => {
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link to="/" className={isHome ? 'flex items-center gap-2 text-white' : 'flex items-center gap-2 text-red-600'}>
             <UtensilsCrossed className="h-8 w-8" />
-            <span className="text-xl font-bold">Le Gourmet</span>
+            <span className="text-xl font-bold">RestoFlow</span>
           </Link>
           
           {/* Desktop Nav */}
